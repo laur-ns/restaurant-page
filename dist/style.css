@@ -1,0 +1,42 @@
+  /* font-family: 'IBM Plex Serif', serif;
+  font-family: 'The Nautigal', cursive; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: 700;
+}
+
+nav a {
+  transition: background-color 0.2s;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 95px;
+  padding: 25px;
+}
+
+nav a:hover {
+  background-color: orange;
+}
+
+.panel {
+  background-color: red;
+  text-align: center;
+}
+
+footer {
+  padding: 15px;
+}
+
+a {
+  color: blue;
+}
