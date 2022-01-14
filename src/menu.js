@@ -7,6 +7,7 @@ const createMenu = (() => {
   const description = document.createElement('p');
   const menuTitle = document.createElement('h1');
 
+  menuTitle.setAttribute('id', 'page-title')
   content.setAttribute('id', 'content');
   menuContainer.classList.add('menu-container');
   menuCard.classList.add('menu-card', 'radius');
@@ -29,10 +30,10 @@ const createMenu = (() => {
     menuCard.append(img);
     menuCard.append(subTitle);
     menuCard.append(description);
+    menuContainer.textContent = '';
     for(let i = 0; i < 6; i++) {
       menuContainer.append(menuCard.cloneNode(true));
     }
-
   }
 
   return {
