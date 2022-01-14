@@ -1,5 +1,5 @@
-  /* font-family: 'IBM Plex Serif', serif;
-  font-family: 'The Nautigal', cursive; */
+    /* font-family: 'IBM Plex Serif', serif;
+    font-family: 'Merienda', cursive; */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
   font-family: 'IBM Plex Serif', serif;
   font-weight: 700;
 }
@@ -21,16 +20,21 @@ nav a {
   display: flex;
   justify-content: center;
   width: 95px;
-  padding: 25px;
+  padding: 20px 65px 20px 65px;
+}
+.Rojo-Salmón-rosas-1-rgba { color: rgba(244, 103, 103, 1); }
+.Rojo-Salmón-rosas-2-rgba { color: rgba(198, 52, 54, 1); }
+.Rojo-Salmón-rosas-3-rgba { color: rgba(163, 33, 35, 1); }
+.Rojo-Salmón-rosas-4-rgba { color: rgba(142, 14, 20, 1); }
+.Rojo-Salmón-rosas-5-rgba { color: rgba(223, 11, 11, 1); }
+
+.panel {
+  background-color: #A32223;
+  text-align: center;
 }
 
 nav a:hover {
-  background-color: orange;
-}
-
-.panel {
-  background-color: red;
-  text-align: center;
+  background-color: #E00B0B;
 }
 
 footer {
@@ -38,5 +42,41 @@ footer {
 }
 
 a {
-  color: blue;
+  color: white;
+  font-size: 20px;
+}
+
+.title-container {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+          linear-gradient(
+          rgba(142, 14, 20, 0.95),
+          rgba(198, 52, 54, 0.8) 
+        ),
+        url('./img/home-bg.jpg');
+  background-size: 100%;
+}
+
+.title {
+  font-family: 'Merienda', cursive;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 28px;
+  text-align: center;
+  filter: drop-shadow(3px 3px 6px #8E0F14)
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container img{
+  display: block;
+  height: 250px;
+  width: auto;
+  object-fit: cover;
 }
