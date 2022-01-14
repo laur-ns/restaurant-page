@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ appendContact)\n/* harmony export */ });\nconst createContact = (() => {\n  const content = document.createElement('div');\n  const contactTitle = document.createElement('h1');\n  const menuContainer = document.createElement('div');\n  const contactCard = document.createElement('div');\n  const imgWrapper = document.createElement('div');\n  const img = document.createElement('img');\n  const contactWrapper = document.createElement('div')\n  const contactUsTitle = document.createElement('h2')\n  const contactUsPara = document.createElement('p')\n  \n  contactTitle.innerHTML = \"<u id='menu-title'>Contact</u>\"\n  menuContainer.classList.add('menu-container');\n  contactCard.classList.add('contact-card', 'radius');\n  imgWrapper.classList.add('img-wrapper')\n  img.classList.add('radius');\n  img.setAttribute('src', './img/home-img.jpg');\n  contactWrapper.classList.add('contact-wrapper');\n  contactUsTitle.textContent = 'Contact Us!';\n  contactUsPara.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quo impedit sunt quibusdam excepturi accusamus odit? Voluptas nostrum, iusto quam<br><br>Signissimos dolorum, exercitationem, eos nesciunt praesentium  explicabo illum accusantium maxime.';\n\n  const setContactTitle = () => {\n    const panel = document.querySelector('.panel');\n    panel.parentNode.insertBefore(contactTitle, panel.nextSibling);\n    panel.parentNode.insertBefore(content, contactTitle.nextSibling);\n  }\n  const displayCard = () => {\n    const panel = document.querySelector('.panel');\n    panel.parentNode.insertBefore(content, contactTitle.nextSibling);\n    content.append(menuContainer);\n    menuContainer.append(contactCard);\n    contactCard.append(imgWrapper);\n    imgWrapper.append(img);\n    contactCard.append(contactWrapper);\n    contactWrapper.append(contactUsTitle)\n    contactWrapper.append(contactUsPara)\n  }\n\n  return {\n    setContactTitle,\n    displayCard\n  }\n})();\n\nfunction appendContact() {\n  createContact.setContactTitle();\n  createContact.displayCard();\n}\n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _panel_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./panel.js */ \"./src/panel.js\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n\n\n\n\n(0,_panel_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n// appendHome();\n(0,_menu_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _panel_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./panel.js */ \"./src/panel.js\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact.js */ \"./src/contact.js\");\n\n\n\n\n\n(0,_panel_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n// appendHome();\n(0,_contact_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
