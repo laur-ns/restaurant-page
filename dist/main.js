@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _panel_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./panel.js */ \"./src/panel.js\");\n\n\n(0,_panel_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\nlet header = document.createElement('header');\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _panel_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./panel.js */ \"./src/panel.js\");\n\n\n(0,_panel_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pan
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ appendPanels)\n/* harmony export */ });\nconst panels = (() => {\n  let header = document.createElement('header');\n  header.classList.add('panel');\n  let nav = document.createElement('nav');\n\n  \n  const appendHeader = () => {\n    console.log('header');\n  }\n  const appendFooter = () => {\n    console.log('footer');\n  }\n\n  return {\n    appendHeader,\n    appendFooter,\n  }\n})();\n\nfunction appendPanels() {\n  panels.appendHeader();\n  panels.appendFooter();\n}\n\n//# sourceURL=webpack://restaurant-page/./src/panel.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ appendPanels)\n/* harmony export */ });\nconst panels = (() => {\n  let header = document.createElement('header');\n  let nav = document.createElement('nav');\n  let links = document.createElement('a');\n  let body = document.querySelector('body');\n  const appendHeader = () => {\n    header.classList.add('panel');\n    body.prepend(header);\n    document.querySelector('header').append(nav);\n    document.querySelector('nav').append(links);\n    document.querySelector('nav a').setAttribute('href', './index.html')\n    links.textContent = 'Home';\n    document.querySelector('nav').append(links.cloneNode());\n    document.querySelector('nav a:last-child').textContent = 'Menu';\n    document.querySelector('nav').append(links.cloneNode());\n    document.querySelector('nav a:last-child').textContent = 'Contact';\n  }\n  const appendFooter = () => {\n    console.log('footer');\n  }\n  return {\n    appendHeader,\n    appendFooter,\n  }\n})();\n\nfunction appendPanels() {\n  panels.appendHeader();\n  panels.appendFooter();\n}\n\n//# sourceURL=webpack://restaurant-page/./src/panel.js?");
 
 /***/ })
 
