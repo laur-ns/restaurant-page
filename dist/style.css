@@ -114,6 +114,7 @@ a {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  margin-bottom: 20px;
 }
 
 .menu-container .menu-card {
@@ -128,6 +129,10 @@ a {
   padding: 50px 5% 50px 5%;
   background-color: white;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.103));
+}
+
+.menu-container .menu-card:hover {
+  background-color: rgb(245, 245, 245);
 }
 
 .menu-card img {

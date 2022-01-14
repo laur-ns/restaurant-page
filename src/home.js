@@ -5,7 +5,7 @@ const appendHome = () => {
   const infoWrapper = document.createElement('div')
   const card = document.createElement('div')
   const img = document.createElement('img')
-  // attributes for above
+
   content.setAttribute('id', 'content');
   titleWrapper.classList.add('title-container');
   title.classList.add('title');
@@ -13,7 +13,7 @@ const appendHome = () => {
   card.classList.add('card', 'radius');
   img.classList.add('radius');
   img.setAttribute('src', './img/home-img.jpg');
-  // no attribute variables
+
   const ingTitle = document.createElement('h2')
   const loremIpsum = document.createElement('p')
   const addressTitle = document.createElement('h2')
