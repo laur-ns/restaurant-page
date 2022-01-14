@@ -11,14 +11,14 @@ const panels = (() => {
   const appendHeader = () => {
     header.classList.add('panel');
     body.prepend(header);
-    document.querySelector('header').append(nav);
-    document.querySelector('nav').append(links);
+    header.append(nav);
+    nav.append(links);
     document.querySelector('nav a').setAttribute('id', '1')
     links.textContent = 'Home';
-    document.querySelector('nav').append(links.cloneNode());
+    nav.append(links.cloneNode());
     document.querySelector('nav a:last-child').textContent = 'Menu';
     document.querySelector('nav a:last-child').setAttribute('id', '2');
-    document.querySelector('nav').append(links.cloneNode());
+    nav.append(links.cloneNode());
     document.querySelector('nav a:last-child').setAttribute('id', '3');
     document.querySelector('nav a:last-child').textContent = 'Contact';
   }
@@ -27,7 +27,7 @@ const panels = (() => {
     github.setAttribute('href', 'https://github.com/laur-ns/');
     github.textContent = 'github.com/laur-ns'
     body.append(footer);
-    document.querySelector('footer').append(github);
+    footer.append(github);
   }
   return {
     appendHeader,
